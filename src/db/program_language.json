@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "language": "node",
+        "image": "node.png",
+        "alt": "node"
+    },
+    {
+        "id": 2,
+        "language": "javascript",
+        "image": "js.jpg",
+        "alt": "javascript"
+    },
+    {
+        "id": 3,
+        "language": "ruby",
+        "image": "ruby.png",
+        "alt": "ruby"
+    },
+    {
+        "id": 4,
+        "language": "pyton",
+        "image": "pyton.png",
+        "alt": "pyton"
+    },
+    {
+        "id": 5,
+        "language": "php",
+        "image": "php.png",
+        "alt": "php"
+    },
+    {
+        "id": 6,
+        "language": "c#",
+        "image": "c.png",
+        "alt": "c"
+    }
+]

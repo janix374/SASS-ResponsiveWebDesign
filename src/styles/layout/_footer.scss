@@ -1,0 +1,67 @@
+.footer{
+    .container {
+        @include container;
+        
+        ul {
+            list-style-type: none;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $font-navbar-color;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        .social {
+            
+            ul {
+                display: flex;
+                font-size: 2rem;
+                flex-direction: row;
+            }
+
+            li {
+                margin: 0 5px;
+            }
+
+        }
+    }
+
+    .grid {
+        @include grid;
+    } 
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@include breakpint(tablet){
+    .footer {
+       
+        .grid {
+            @include grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .per-social{
+            ul {
+                text-align: center;
+            }
+        }
+
+        .social {
+            ul {
+                justify-content: center;
+            }
+        }
+
+    }
+}

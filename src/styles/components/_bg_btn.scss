@@ -1,0 +1,36 @@
+//button and background setup
+.bg-primary,
+.btn-primary {
+    background-color: $primary-color;
+    color: #ffffff;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background-color: $secondary-color;
+    color: #ffffff;
+}
+
+.bg-dark,
+.btn-dark {
+    background-color: $dark-color;
+    color: #ffffff;
+}
+
+.bg-light,
+.btn-light {
+    background-color: $light-color;
+    color: #333;
+}
+
+.bg-success,
+.btn-success {
+    background-color: $success-color;
+    color: #fff;
+}
+
+.bg-danger,
+.btn-danger {
+    background-color: $danger-color;
+    color: #fff;
+}

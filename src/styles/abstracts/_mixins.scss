@@ -1,0 +1,28 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@mixin container{
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+@mixin grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@mixin breakpint($point) {
+    @if $point == mobile {
+        @media(max-width: 500px) { @content; }
+    } 
+    @else if $point == tablet {
+        @media(max-width: 768px) { @content; }
+    }
+}

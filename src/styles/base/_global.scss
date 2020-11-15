@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-global-color;
+    font-family: $font-global;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+code {
+    background: #333;
+    color: #fff;
+}
+
+pre {
+    background: #333;
+    color: #fff;
+}
+
+.text-centar {
+    text-align: center;
+}
+
+.alert {
+    background-color: $light-color;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert-success {
+    background-color: $success-color;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: $danger-color;
+    color: #fff;
+}

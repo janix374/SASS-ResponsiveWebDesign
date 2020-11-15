@@ -1,0 +1,95 @@
+/*showcase*/
+.showcase {
+    height: 400px;
+    background-color: $bg-showcase-color;
+    color: $font-showcase-color;
+    position: relative;
+
+    .container {
+        @include container;
+    }
+
+    .grid {
+      @include grid;
+      grid-template-columns: 55% 45%;
+      gap: 30px;
+      overflow: visible;
+    }
+
+    .showcase-text {
+        animation: sliderFromLeft 1s ease-in;
+    }
+
+    .showcase-card {
+        background-color: $bg-card-color;
+        color: $font-card-color;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .showcase-form {
+        position: relative;
+        top: 60px;
+        height: 350px;
+        width: 400px;
+        padding: 40px;
+        z-index: 20;
+        animation: sliderFromRight 1s ease-in;
+
+        .form-control {
+            margin: 30px 0;
+        }
+        
+        input[type='text'], input[type='email'] {
+            border: 0;
+            border-bottom: 1px solid $form-input-border-color;
+            width: 100%;
+            padding: 3px;
+            font-size: 16;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        height: 100px;
+        bottom: -70px;
+        right: 0;
+        left: 0;
+        background-color: $bg-befor-after-color;
+        transform: skewY(-3deg);
+        -webkit-transform: skewY(-3deg);
+        -moz-transform: skewY(-3deg);
+        -ms-transform: skewY(-3deg);
+    }
+
+}
+
+
+@include breakpint(tablet){
+    .showcase {
+        height: auto;
+
+        .grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .showcase-text {
+            text-align: center;
+            animation: sliderFromTop 1s ease-in;
+        }
+
+        .showcase-form {
+            justify-content: center;
+            margin: auto;
+            animation: sliderFromBottom 1s ease-in;
+        }
+    }
+}

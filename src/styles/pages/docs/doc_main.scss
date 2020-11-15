@@ -1,0 +1,64 @@
+.doc-main {
+
+    .container {
+        @include container;
+
+        .card {
+            background-color: $bg-card-color;
+            color: $font-card-color;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;  
+        }
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 1.1rem;
+            padding-bottom: 0.2rem;
+            margin-bottom: 0.2rem;
+            border-bottom: 1px #ccc solid;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        i {
+            font-size: 2rem;
+        }
+    
+    }
+
+    .grid {
+        @include grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: flex-start;
+      }
+
+   
+}
+
+
+@include breakpint(tablet){
+    .doc-main {
+       
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+}

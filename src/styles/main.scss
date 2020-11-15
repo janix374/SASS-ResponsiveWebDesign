@@ -1,0 +1,29 @@
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+
+@import 'base/fonts';
+@import 'base/colors';
+@import 'base/margin-padding';
+@import 'base/global';
+
+@import 'components/buttons';
+@import 'components/bg_btn';
+
+@import 'layout/navigation';
+@import 'layout/footer';
+
+@import 'pages/home/showcase.scss';
+@import 'pages/home/status.scss';
+@import 'pages/home/cli.scss';
+@import 'pages/home/cloud.scss';
+@import 'pages/home/program_language.scss';
+@import 'pages/home/card.scss';
+
+@import 'pages/features/features_head.scss';
+@import 'pages/features/features_sub_head.scss';
+@import 'pages/features/features_main.scss';
+
+@import 'pages/docs/doc_head.scss';
+@import 'pages/docs/doc_main.scss';
+
+
