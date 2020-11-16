@@ -1,6 +1,6 @@
 # Example of Responsive web design 
 
-SASS, react-icons, react-syntax-highlighter, node-sass.
+SASS, grid, flax, react-icons, react-syntax-highlighter, node-sass.
 
 
 # Getting Started with Create React App
