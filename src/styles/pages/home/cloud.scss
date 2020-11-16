@@ -9,7 +9,19 @@
     .grid {
         @include grid;
         grid-template-columns: repeat(2, 1fr); 
+
+
+        .cloud-image {
+            background-image: url('../../../images/cloud.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            max-width: 100%;
+            background-position: center;
+            height:300px;
+        }
     } 
+
+   
 
 }
 

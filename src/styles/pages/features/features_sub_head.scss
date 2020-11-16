@@ -8,6 +8,10 @@
           @include grid;
           grid-template-columns: repeat(2, 1fr);
         }
+
+        .grid > *:nth-child(2) {
+         text-align: right;
+        }
     
         img {
             width: 400px;

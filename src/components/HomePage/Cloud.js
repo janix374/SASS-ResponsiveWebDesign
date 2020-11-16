@@ -1,6 +1,7 @@
 import React from 'react';
 import cloud from '../../images/cloud.png';
 import { Link } from "react-router-dom";
+import { Clock } from '../Clock';
 
 const Cloud = () => {
     return (
@@ -14,7 +15,10 @@ const Cloud = () => {
                     </p>
                     <Link to="/features" className="btn btn-dark">Read More</Link>
                 </div>
-                <img src={cloud} alt="cloud"/>
+                <div className="cloud-image">
+                   <Clock />
+                </div>
+                {/* <img src={cloud} alt="cloud"/> */}
             </div>
         </div>
     )
